@@ -32,10 +32,15 @@ gem 'jbuilder', '2.7.0'
 gem 'bcrypt', '3.1.12'
 gem 'faker', '1.8.6'
 gem 'i18n', '1.6.0'
+gem 'carrierwave', '1.2.2'
+gem 'mini_magick', '4.7.0'
 gem 'will_paginate', '3.1.6'
 gem 'bootstrap-will_paginate', '1.0.0'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+#gem 'json', '2.0'
+#gem 'fog-ovirt', '1.1.6'
+#gem 'ovirt-engine-sdk', '4.3.0'
 
 group :development, :test do
   gem 'sqlite3', '1.3.13'
@@ -65,6 +70,7 @@ end
 
 group :production do
   gem 'pg', '0.20.0'
+  gem 'fog-aws', '3.0.0'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
